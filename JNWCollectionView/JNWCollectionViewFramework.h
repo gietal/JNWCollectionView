@@ -305,6 +305,9 @@ typedef NS_ENUM(NSInteger, JNWCollectionViewScrollPosition) {
 /// desired, pass in JNWCollectionViewScrollPositionNone to prevent the scroll..
 - (void)selectItemAtIndexPath:(NSIndexPath *)indexPath atScrollPosition:(JNWCollectionViewScrollPosition)scrollPosition animated:(BOOL)animated;
 
+/// Select the items at the specified index paths, doesn't deselect previously selected items, optionally animated
+- (void)selectItemsAtIndexPaths:(NSArray *)indexPaths animated:(BOOL)animated;
+
 /// Selects all items in the collection view.
 - (void)selectAllItems;
 
